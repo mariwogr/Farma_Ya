@@ -1,0 +1,340 @@
+$font-montserrat: 'Montserrat', sans-serif;
+
+
+nav{
+    height: 161px;
+}
+
+// [Fonts]
+.tittle_font{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.text_font{
+    font-family: $font-montserrat;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+#cart_font{
+    font-family: $font-montserrat;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#recipe_font{
+    font-family: $font-montserrat;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#tittle_div{
+    background-color: rgb(167, 234, 234);
+    border-radius: 15px;
+    margin: auto;
+}
+
+#placeholder_text_font{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.img_product{
+    width: 150px;
+	height: 150px;
+    border-radius: 15px;
+}
+
+#search_product_box{
+    text-align: center;
+}
+
+.product_div{
+    text-align: center;
+    background-color: rgb(167, 234, 234);
+    border-radius: 50px;
+    width: 300px;
+    height: 470px;
+    margin: auto;
+}
+
+#grid_table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid_options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 150px;
+    margin: auto;
+}
+
+.add_button{
+    margin: 0px 10px 0px 10px;
+    border-radius: 15px;
+    width: 30px;
+	height: 30px;
+    margin: auto;
+}
+
+.remove_button{
+    margin: 0px 10px 0px 10px;
+    border-radius: 15px;
+    width: 30px;
+	height: 30px;
+    margin: auto;
+}
+
+.add_cart_button{
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+    width: 80px;
+	height: 30px;
+    margin: auto;
+    font-family:$font-montserrat;
+    font-weight:bolder;
+    font-size: large;
+}
+
+.add_button:hover{
+    background-color: rgb(92, 225, 97);
+}
+
+.remove_button:hover{
+    background-color: rgb(217, 89, 89);
+}
+
+.add_cart_button:hover{
+    background-color: rgb(180, 203, 203);
+}
+
+#menu{
+    text-align: center;
+    display: flex;
+}
+
+.icon {
+	width:80px;
+	height: 80px;
+    margin:auto;
+}
+
+#red{
+    color: rgb(189, 16, 16);
+}
+
+#home {
+    display: block;
+}
+#recipe {
+    display: none
+}
+
+#cart {
+    display: none
+}
+
+.cart_prod{
+    margin: 20px auto 20px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 60%;
+    align-items: center;
+    background-color: rgb(203, 210, 210);
+    border-radius: 15px;
+}
+
+.product_name{
+    font-family: $font-montserrat;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 90px auto 90px auto;
+}
+
+.trashcan_icon{
+    width: 50px;
+	height: 50px;
+    border-radius: 15px;
+}
+
+.cart_uds{
+    font-family: $font-montserrat;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.cart_total_prize{    
+    font-family: $font-montserrat;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+
+.img_product2{
+    width: 150px;
+	height: 150px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+#boton_compra_final{
+    margin: auto;
+    border-radius: 5px;
+    width: 500px;
+	height: 30px;
+    font-family:$font-montserrat;
+    font-weight:bolder;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+#boton_sub_final{
+    margin: auto;
+    border-radius: 5px;
+    width: 500px;
+	height: 30px;
+    font-family:$font-montserrat;
+    font-weight:bolder;
+    font-size: large;
+    background-color: rgb(89, 89, 250);
+}
+
+#pop_up_buy{
+    background-color: rgb(216, 216, 237);
+    position: relative;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+    border-width: 5px;
+}
+
+.centro{
+    margin: auto;
+    text-align: center;
+}
+
+#total_prize{
+    font-family: $font-montserrat;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px;
+    margin: auto auto 20px auto;
+    text-align:center;
+}
+
+@media only screen and (max-width:1300px){
+    #grid_table{
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .grid_options{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    #grid_table{
+
+        grid-template-columns: 1fr 1fr;
+    }
+    .cart_prod{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:700px){
+    #grid_table{
+
+        grid-template-columns: 1fr;
+    }
+
+    .cart_prod{
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width:620px){
+    #grid_table{
+
+        grid-template-columns: 1fr;
+    }
+
+    .cart_prod{
+        width: 90%;
+    }
+    .product_name{
+        font-size: 25px;
+    }
+    .cart_uds{
+        font-size: 20px;
+    }
+    .cart_total_prize{
+        font-size: 20px;
+    }
+
+    #boton_compra_final{
+        width: 300px;
+    }
+    #boton_sub_final{
+        width: 300px;
+    }
+    #cart_font{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .img_product2{
+        width: 100px;
+        height: 100px;
+    }
+    .product_name{
+        font-size: 20px;
+    }
+    .trashcan_icon{
+        width: 30px;
+        height: 30px;
+    }
+    .cart_uds{
+        font-size: 15px;
+    }
+    .cart_total_prize{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .img_product2{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width:400px){
+
+    #placeholder_text_font{
+        font-size: 20px;
+    }
+    #cart_font{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+}
